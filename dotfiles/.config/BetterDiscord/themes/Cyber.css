@@ -1,0 +1,397 @@
+/**
+ * @name Wildberry
+ * @version 1.0.0
+ * @description: Inspired by a Pop Tart flavour enjoy a berry inspired color storm for discord.
+ * @website https://github.com/DagCord/Wildberry
+ */
+
+
+
+
+:root {
+    /* Color palette */
+    --wildberry-primary: #170027;
+    --wildberry-secondary: #443270;
+    --wildberry-secondary-alt:#2ed3a4;
+    --wildberry-tertiary: #301b41;
+    --wildberry-accent-color : #2ed3a4;
+    --wildberry-input-box: #350058;
+    --wildberry-mention:  #97004c;
+    --wildberry-red: #ff6c5c;
+    --wildberry-svg: #9b29aa;
+    --wildberry-less-hot: #cc0066;
+
+    /* Scrollbar */
+    --wildberry-scrollbar-track: var(--wildberry-primary);
+    --wildberry-scrollbar-thumb: var(--wildberry-secondary-alt);
+    
+}
+html.theme-light::before {
+    content: "This is a dark mode theme. Maybe find a good light mod e theme lol";
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: var(--wildberry-primary);
+    text-align: center;
+    position: absolute;
+    z-index: 10001;
+    right: 0;
+    left: 0;
+}
+.theme-dark {
+    --background-primary: var(--wildberry-primary);
+    --background-secondary: var(--wildberry-secondary);
+    --background-secondary-alt: var(--wildberry-secondary-alt);
+    --background-floating: var(--wildberry-secondary);
+    --background-tertiary: var(--wildberry-tertiary);
+    --background-accent: var(--background-primary);
+    --background-mentioned-side:#2ed3a4;
+    /* --header-primary: var(--wildberry-accent-color); */
+    --interactive-active: var(--wildberry-accent-color);
+    --radio-group-dot-foreground: var(--wildberry-accent-color);
+    /* Chat input box */
+    --channeltextarea-background: var(--wildberry-input-box);
+    --scrollbar-auto-thumb: var(--wildberry-scrollbar-thumb);
+    --scrollbar-auto-track: var(--wildberry-scrollbar-track);
+    --scrollbar-auto-scrollbar-color-thumb: var(--wildberry-scrollbar-thumb);
+    --scrollbar-auto-scrollbar-color-track: var(--wildberry-scrollbar-track);
+    --text-link: var(--wildberry-secondary-alt);
+}
+
+/* Weird Discord Possesive */
+.theme-dark .pageWrapper-1PgVDX {
+  background-color: var(--background-primary);
+}
+
+
+/* People column */
+.theme-dark .container-1D34oG { background-color: var(--background-primary); }
+
+/* Modals */
+.theme-dark .root-1gCeng { background-color: var(--background-primary); }
+.theme-dark .footer-2gL1pp { background-color: var(--background-tertiary); }
+
+/* Popup when you click a mention */
+.theme-dark .headerNormal-T_seeN { background-color: var(--background-tertiary); }
+.theme-dark .body-3iLsc4, .theme-dark .footer-1fjuF6 { background-color: var(--background-secondary); }
+
+/* Mention autocompletion in chat box */
+.theme-dark .autocomplete-1vrmpx { background-color: var(--background-tertiary) }
+.theme-dark .selected-1Tbx07 { background-color: var(--background-secondary); }
+
+.theme-dark .item-2hkk8m {
+    background-color: var(--header-primary);
+}
+
+
+.theme-dark .focused-3afm-j {
+  background-color: var(--background-mentioned-side);
+}
+
+
+
+/* Assets are all white*/
+.theme-dark svg {
+    color: var(--wildberry-svg);
+}
+
+.theme-dark .icon-1DeIlz {
+  color: var(--wildberry-svg);
+}
+.theme-dark .icon-22AiRD {
+  color: var(--wildberry-svg);
+}
+.theme-dark .premiumIcon-1rDbWQ {
+    color: #721c6f;
+}
+
+.theme-dark .ownerIcon-2NH9FM {
+    color: #faa61a;
+}
+/* Discord mentions*/
+.theme-dark .mentioned-xhSam7:before {
+    background-color: var(--wildberry-mention);
+}
+
+.theme-dark .mentioned-xhSam7 .mention {
+    background-color: var(--wildberry-mention);
+}
+
+.theme-dark .wrapper-3WhCwL {
+  color: var(--background-secondary-alt);
+}
+
+.interactive:hover {
+  background-color: var(--wildberry-tertiary);
+}
+/* New Messages */
+
+.theme-dark .newMessagesBar-265mhP {
+  background-color: var(--background-secondary-alt);
+}
+
+
+/* Inputs */
+
+.theme-dark input {
+  background-color: var(--wildberry-input-box);
+}
+/* Discord Codeblocks */
+.theme-dark code {
+    background-color: var(--wildberry-input-box);
+}
+
+.theme-dark .inline {
+    background-color: var(--background-primary);
+}
+
+
+/* Embeds with no explicit color set*/
+.theme-dark .embed-IeVjo5 {
+    border-color: var(--background-primary);
+}
+
+.theme-dark .item-2hkk8m {
+  color: var(--wildberry-secondary-alt);
+  background-color: var(--wildberry-secondary-alt);
+}
+
+/* Damn Dots */
+
+.theme-dark .unread-2lAfLh {
+  background-color: var(--wildberry-secondary-alt);
+}
+
+/* Do not Disturb Status*/
+.theme-dark rect[mask="url(#svg-mask-status-dnd)"] {
+    fill: var(--wildberry-red);
+}
+/* Mention Badge*/
+.theme-dark .numberBadge-2s8kKX {
+    background-color: var(--wildberry-red) !important;
+}
+/* Search Modal */
+.theme-dark .open-6_Y_aH {
+    background-color: var(--background-secondary);
+}
+
+/* Quote */
+.theme-dark .blockquoteContainer-U5TVEi {
+    background-color: var(--background-tertiary);
+    
+}
+
+.theme-dark .blockquoteContainer-U5TVEi .blockquoteDivider-2hH8H6 {
+  background-color: var(--wildberry-secondary-alt);
+}
+
+/* New Reply*/
+.repliedMessage-VokQwo:before {
+    border-color: var(--wildberry-secondary-alt);
+}
+
+/* Context Menus*/
+.thin-1ybCId {
+    background-color: var(--background-secondary);
+}
+
+/* Folders are ugly */
+.theme-dark .folder-21wGz3 {
+  background-color: var(--wildberry-secondary-alt);
+}
+
+.theme-dark .expandedFolderIconWrapper-1xLaU- {
+  color: white;
+}
+
+/* User Area */
+.theme-dark .panels-j1Uci_ {
+  background-color: #a4508b;
+  background-image: linear-gradient(326deg, #641f4f 0%, #5f0a87 74%);
+}
+
+/* RPC */
+
+.theme-dark .headerPlaying-j0WQBV {
+  background-color: var(--background-tertiary);
+}
+
+.theme-dark .lookFilled-1Gx00P {
+  background-color: var(--wildberry-accent-color);
+}
+
+.theme-dark .colorGrey-2DXtkV {
+  background-color: var(--wildberry-less-hot);
+}
+
+/* Bot Tag */
+.botTagRegular-2HEhHi {
+  transition: .5s;
+  background: rgba(114,137,218,0.1);
+  color: #2ed3a4;
+}
+.botTagRegular-2HEhHi:hover {
+  transition: .5s;
+  background: #2ed3a4;
+  color: #fff;
+}
+
+/* Selection Menu Neutral */
+.passthrough-1c2ewQ.selected-2YhbGh  {
+  background-color: #ffba00 !important;
+}
+
+/* Better ROles */
+.role-2irmRk {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  padding: 5px;
+}
+.roleCircle-3xAZ1j::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  opacity: .2;
+  pointer-events: none;
+}
+.footer-1fjuF6 {
+  border-top: none;
+}
+/*
+Gradient Dark (c) Samia Ali <samiaab1990@gmail.com>
+*/
+
+.theme-dark .hljs
+{
+display: block;
+overflow-x: auto;
+padding: 0.5em;
+/* background: rgb(80,31,122); */
+/* background: linear-gradient(166deg, rgba(80,31,122,1) 0%, rgba(40,32,179,1) 80%); */
+background-color: var(--wildberry-input-box);
+color:#e7e4eb;
+}
+
+.theme-dark .markup-2BOw-j code {
+  border: 1px solid var(--wildberry-tertiary);
+}
+
+.theme-dark .powercord-codeblock-table td:first-child {
+  /* border-right: 1px solid var(--wildberry-less-hot); */
+  color: var(--background-mentioned-side);
+}
+
+/* .theme-dark .powercord-codeblock-lang {
+   border-bottom: 1px solid var(--wildberry-less-hot); 
+  color: var(--background-mentioned-side);
+}  */
+
+.hljs-subtr{
+  color:#e7e4eb;
+}
+
+.hljs-doctag,
+.hljs-meta,
+.hljs-comment,
+.hljs-quote
+{
+  color:#9a7cbe;
+}
+
+.hljs-selector-tag,
+.hljs-selector-id,
+.hljs-template-tag,
+.hljs-regexp,
+.hljs-attr,
+.hljs-tag
+{
+  color:#7cb1b4;
+}
+
+.hljs-params,
+.hljs-selector-class,
+.hljs-bullet
+
+{
+  color:#b57dbe;
+  
+}
+
+.hljs-keyword,
+.hljs-section,
+.hljs-meta-keyword,
+.hljs-symbol,
+.hljs-type
+
+{
+
+  color:#10a361;
+}
+
+.hljs-addition,
+.hljs-number,
+.hljs-link
+{
+  color:#789901;
+}
+
+
+.hljs-string
+{
+  color: #2989b6;
+}
+
+
+.hljs-attribute,
+.hljs-addition
+{
+  color:#8fac39;
+}
+
+.hljs-variable,
+.hljs-template-variable
+
+{
+  color:#892c99;
+}
+
+.hljs-builtin-name,
+.hljs-built_in,
+.hljs-formula,
+.hljs-name,
+.hljs-title,
+.hljs-class,
+.hljs-function
+{
+  color: #FFC800;
+
+}
+
+.hljs-selector-pseudo,
+.hljs-deletion,
+.hljs-literal
+{
+  color:#FF9E44;
+
+}
+
+.hljs-emphasis,
+.hljs-quote
+{
+  font-style:italic;
+}
+
+.hljs-params,
+.hljs-selector-class,
+.hljs-strong,
+.hljs-selector-tag,
+.hljs-selector-id,
+.hljs-template-tag,
+.hljs-section,
+.hljs-keyword
+{
+  font-weight:bold;
+}
