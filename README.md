@@ -1,6 +1,6 @@
 # My Dotfiles
 
--Wallpaper: Cyberpunk
+- Wallpaper: Cyberpunk
 - Window Manager: i3-gaps
 - Compositor: picom
 - Terminal: kitty (font: Overpass)
